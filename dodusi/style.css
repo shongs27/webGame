@@ -2,11 +2,11 @@
   display: inline-block;
   width: 200px;
   height: 200px;
-  position: relative;
   /* overflow가 적용될려면 position을 바꿔줘야하는 경우 */
-  /* overflow: hidden; */
-  user-select: none;
+  overflow: hidden;
+  position: relative;
   /* 겹칠것이므로 클릭이 안되게 만들어야 함 */
+  user-select: none;
 }
 
 .gopher,
@@ -35,24 +35,25 @@
   background-size: 200px 200px;
 }
 
+/* 해당 이미지를 누르고 있는 것이다 */
 .hidden {
   bottom: -200px;
 }
 
 .hole {
   width: 200px;
-  height: 200px;
+  height: 150px;
   position: absolute;
   bottom: 0;
   background: url("./assets/mole-hole.png") center center no-repeat;
   background-size: 200px 200px;
 }
 
-/* .hole-front {
+.hole-front {
   width: 200px;
   height: 30px;
   position: absolute;
   bottom: 0;
   background: url("./assets/mole-hole-front.png") center center no-repeat;
   background-size: 200px 30px;
-} */
+}
